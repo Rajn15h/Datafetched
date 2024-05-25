@@ -1,0 +1,19 @@
+<div class="flex" >
+    <div class=" w-[400px] ml-5 ">
+        <img src="{{productdata?.images[0]}}" class="w-[200px] h-[250px] pt-9 pl-9 "/>
+        <button class="bg-blue-500 rounded py-2 px-5 mx-3 mt-[90px] text-white font-bold ">BuyNow</button>
+        <button class="bg-blue-500 rounded py-2 px-5 mx-3 mt-[90px] text-white font-bold ">Add To Cart</button>
+    </div>
+    <div class="w-full w-[600px] ml-9 mt-9">
+        <h1 class="font-bold ">HP8 PENDRIVE</h1>
+        <p class="mb-2 text-green-400" >special Price</p>
+        <p class="mb-2">{{productdata.price|currency}}</p>
+        <p class="mb-2">Category: {{productdata.category}}</p>
+        <p class="mb-2">Description:
+            {{productdata.description}}
+        </p>
+        <p class="mb-2 text-red-400">Discount:{{productdata.discountPercentage}}</p>
+        <p class="mb-9 text-black">Stocks:{{productdata.stock}}</p>
+    </div>
+    
+</div>

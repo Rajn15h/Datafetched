@@ -1,0 +1,22 @@
+
+    
+
+    <div class="w-full grid sm:grid-cols-3 md:grid-cols-4 ">
+        <div class=" flex flex-col gap-2 px-4 py-2 border cursor-pointer  " *ngFor="let item of data?.products">
+            <img routerLink="/productdetails/{{item.id}}"    src={{item.thumbnail}} alt="" class="scaleImage w-[100px] h-[150px] md:w-[200px] md:h-[250px] border border-black ml-[70px] mt-2 ">
+            <p class="hover:text-[blue] text-center">{{item.title}}</p>
+            <p class="text-[green] font-bold text-center">{{item.price|currency}}</p>
+            <button routerLink="/productdetails/{{item.id}}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-9 mx-9 rounded">viewdetails</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-9 mx-9 rounded">AddToCart</button>
+
+        </div>
+           
+        
+        
+    </div>
+   
+    
+
+
+    
+
